@@ -84,7 +84,7 @@ std::vector<State> MotionPlanner::generate_offset_goals(
 
   // TODO-Perpendicular direction: ADD pi/2 to the goal yaw
   // (goal_state.rotation.yaw)
-  auto yaw = goal_state.rotation.yaw + M_PI_2;  // <- Fix This
+  auto yaw_plus_90 = goal_state.rotation.yaw + M_PI_2;  // <- Fix This
 
   // LOG(INFO) << "MAIN GOAL";
   // LOG(INFO) << "x: " << goal_state.location.x << " y: " <<
